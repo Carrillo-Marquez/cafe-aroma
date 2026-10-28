@@ -1,36 +1,190 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Aroma</title>
+
+    <meta name="author" content="D'LIANN">
+    <meta name="description" content="Pastelería D'LIANN, pasteles y postres para momentos especiales">
+    <meta name="keywords" content="pastelería, pasteles, postres, cumpleaños">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="shortcut icon" href="imagenes/Logo.jpeg" type="image/jpeg">
+
+    <title>D'LIANN Pastelería</title>
 </head>
+
 <body>
-    <header>
-        <h1>Café Aroma</h1>
-        <p>El mejor café para tus mejores momentos</p>
+
+    <header class="navbar navbar-expand-lg py-0 fixed-top">
+        <nav class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="imagenes/Logo.jpeg" alt="Logo D'LIANN"
+                     class="d-inline-block align-text-middle logotipo">
+                D'LIANN
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                    <a class="nav-link" href="#productos">Productos</a>
+                    <a class="nav-link" href="#pedidos">Pedidos personalizados</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                    <a class="nav-link" href="#ubicacion">Ubicación</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="pages/servicios.html">Servicios</a>
-    </nav>
 
-    <main>
-        <h2>Bienvenidos</h2>
-        <p>
-            Café Aroma es una empresa dedicada a ofrecer café artesanal, postres
-            y un ambiente agradable para convivir, estudiar o trabajar.
-        </p>
-        <p>
-            Nuestro objetivo es brindar productos de calidad y una experiencia cómoda
-            para todos nuestros clientes.
-        </p>
-    </main>
+    <section id="inicio" class="container py-5">
+        <div class="row">
+            <figure class="col-lg-6">
+                <img src="imagenes/Pastel con fresas.jpeg" alt="Pastel de D'LIANN" class="img-fluid rounded">
+            </figure>
 
-    <footer>
-        <p>© 2026 Café Aroma</p>
+            <article class="col-lg-6 text-center pt-lg-5">
+                <h1 class="display-4 fw-bold"> Bienvenidos a D'LIANN</h1>
+                <h2> Pastelería </h2>
+                <p class="fs-5"> Endulzamos tus momentos especiales con pasteles y postres preparados con dedicación y creatividad.</p>
+                <a href="#productos" class="btn btn-primary"> Ver nuestros productos</a>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="nosotros" class="seccion-rosa py-5">
+        <article class="container text-center">
+            <h1 class="display-4 fw-bold">¿Quiénes somos?</h1>
+            <p class="fs-5"> D'LIANN es una pastelería dedicada a la elaboración de pasteles y postres para celebrar momentos especiales.</p>
+            <p id="parrafo" class="collapse">Nos gusta combinar creatividad, presentación y sabor para ofrecer productos pensados para cada ocasión.También realizamos pedidos personalizados según las preferencias de nuestros clientes.</p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#parrafo" role="button" aria-expanded="false" aria-controls="parrafo">
+                Leer más...
+            </a>
+        </article>
+    </section>
+
+
+    <section id="productos" class="container py-5">
+        <h1 class="display-4 fw-bold text-center">Nuestros Productos</h1>
+        <div class="row py-4">
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+                <div class="card">
+                    <img src="imagenes/Pastel de chocolate.jpeg" class="card-img-top" alt="Pastel de chocolate">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold"> Pasteles </h5>
+                        <p class="card-text"> Pasteles para cumpleaños, celebraciones y ocasiones especiales.</p>
+                        <a href="#pedidos" class="btn btn-primary"> Solicitar información </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+                <div class="card">
+                    <img src="imagenes/Patel personalizado.jpeg" class="card-img-top" alt="Pastel personalizado">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold"> Pasteles personalizados </h5>
+                        <p class="card-text"> Diseños especiales para que cada celebración sea única.</p>
+                        <a href="#pedidos" class="btn btn-primary"> Solicitar información</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+                <div class="card">
+                    <img src="imagenes/Postre.jpeg" class="card-img-top" alt="Postres">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold"> Postres </h5>
+                        <p class="card-text"> Diferentes opciones dulces para compartir y disfrutar.</p>
+                        <a href="#pedidos" class="btn btn-primary"> Solicitar información</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="pedidos" class="seccion-rosa py-5">
+        <article class="container text-center">
+            <h1 class="display-4 fw-bold">Pedidos Personalizados</h1>
+            <p class="fs-5">¿Tienes una celebración especial? Podemos ayudarte a crear un pastel con el diseño que tienes en mente.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                ¿Cómo realizar un pedido?
+            </button>
+        </article>
+    </section>
+
+
+    <section id="contacto" class="container py-5">
+        <h1 class="display-4 fw-bold text-center"> Contáctanos </h1>
+        <p class="text-center fs-5"> Envíanos un mensaje para consultar nuestros productos y pedidos personalizados.</p>
+        <div class="row">
+            <article class="col-lg-6 offset-lg-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"> Nombre </label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label"> Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="seccion-rosa py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold"> Ubicación </h1>
+            <p class="fs-5"> Encuéntranos y conoce más sobre nuestra pastelería.</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.7233820385127!2d-101.65258472495447!3d21.083707580579443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf570807c117%3A0x23038dc92fbcb3ed!2sPasteleria%20D%E2%80%99%20Liann!5e0!3m2!1ses-419!2smx!4v1793158743747!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-4">
+        <p>
+            Copyright 2026 - D'LIANN Pastelería
+        </p>
     </footer>
+
+    <div class="modal fade" id="modalPedido" tabindex="-1" aria-labelledby="tituloPedido" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="tituloPedido"> Pedidos personalizados </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                </div>
+
+                <div class="modal-body">
+                    <p> Para solicitar un pastel personalizado, indícanos la fecha de tu evento, el tamaño aproximado del pastel y el diseño que deseas. </p>
+                    <p> Puedes compartir una imagen de referencia para explicar mejor tu idea.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,124 @@
+
+/* ESTILOS GENERALES */
+
+body{
+    background-color: #fffdfb;
+    color: #4a3035;
+}
+
+
+/* MENU DE NAVEGACION */
+
+.navbar{
+    background-color: #f5d5de;
+}
+
+.logotipo{
+    width: 65px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-brand{
+    color: #693b45;
+    font-size: 24px;
+}
+
+.navbar-brand:hover{
+    color: #693b45;
+}
+
+.nav-link{
+    color: #96506b;
+}
+
+.nav-link:hover{
+    color: #5c293c;
+}
+
+
+/* SECCIONES */
+
+#inicio{
+    margin-top: 90px;
+}
+
+#nosotros{
+    scroll-margin-top: 80px;
+}
+
+#productos{
+    scroll-margin-top: 80px;
+}
+
+#pedidos{
+    scroll-margin-top: 80px;
+}
+
+#contacto{
+    scroll-margin-top: 80px;
+}
+
+#ubicacion{
+    scroll-margin-top: 80px;
+}
+
+.seccion-rosa{
+    background-color: #fff0f4;
+}
+
+
+/* TITULOS */
+
+h1{
+    color: #8b3a55;
+}
+
+h2{
+    color: #96506b;
+}
+
+
+/* BOTONES */
+
+.btn-primary{
+    background-color: #8b3a55;
+    border-color: #8b3a55;
+}
+
+.btn-primary:hover{
+    background-color: #622538;
+    border-color: #622538;
+}
+
+
+/* TARJETAS */
+
+.card{
+    height: 100%;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 8px #c59caa;
+}
+
+
+/* IMAGEN DE INICIO */
+
+#inicio img{
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+/* PIE DE PAGINA */
+
+footer{
+    background-color: #8b3a55;
+}
